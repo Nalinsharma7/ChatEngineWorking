@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const projectID = '1b7801d6-8a66-4be4-a442-89219d833dfc';
+const projectID = '3bc41d78-38eb-4b09-a126-691d50ba8c5c';
 
 const Modal = () => {
   const [username, setUsername] = useState('');
@@ -33,7 +33,8 @@ const Modal = () => {
         <form onSubmit={handleSubmit}>
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
-          <div align="center">
+          {/* <div align="center"> */}
+          <div>
             <button type="submit" className="button">
               <span>Start chatting</span>
             </button>
